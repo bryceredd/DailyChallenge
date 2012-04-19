@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02E070BC154093D700BF4BCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E070BB154093D700BF4BCE /* UIKit.framework */; };
+		02E070BE154093D700BF4BCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E070BD154093D700BF4BCE /* Foundation.framework */; };
+		02E070C0154093D700BF4BCE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E070BF154093D700BF4BCE /* CoreGraphics.framework */; };
+		02E070C6154093D700BF4BCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02E070C4154093D700BF4BCE /* InfoPlist.strings */; };
+		02E070C8154093D700BF4BCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E070C7154093D700BF4BCE /* main.m */; };
+		02E070CC154093D700BF4BCE /* RFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E070CB154093D700BF4BCE /* RFAppDelegate.m */; };
+		02E070CF154093D700BF4BCE /* RFRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E070CE154093D700BF4BCE /* RFRootViewController.m */; };
+		02E070D2154093D700BF4BCE /* RFDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E070D1154093D700BF4BCE /* RFDataViewController.m */; };
+		02E070D5154093D700BF4BCE /* RFModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E070D4154093D700BF4BCE /* RFModelController.m */; };
+		02E070D8154093D700BF4BCE /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E070D6154093D700BF4BCE /* MainStoryboard_iPhone.storyboard */; };
+		02E070DB154093D800BF4BCE /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E070D9154093D800BF4BCE /* MainStoryboard_iPad.storyboard */; };
+		02E070E3154093D800BF4BCE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E070E2154093D800BF4BCE /* SenTestingKit.framework */; };
+		02E070E4154093D800BF4BCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E070BB154093D700BF4BCE /* UIKit.framework */; };
+		02E070E5154093D800BF4BCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E070BD154093D700BF4BCE /* Foundation.framework */; };
+		02E070ED154093D800BF4BCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02E070EB154093D800BF4BCE /* InfoPlist.strings */; };
+		02E070F0154093D800BF4BCE /* DailyChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E070EF154093D800BF4BCE /* DailyChallengeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02E070E6154093D800BF4BCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02E070AE154093D700BF4BCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02E070B6154093D700BF4BCE;
+			remoteInfo = DailyChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02E070B7154093D700BF4BCE /* DailyChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E070BB154093D700BF4BCE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		02E070BD154093D700BF4BCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		02E070BF154093D700BF4BCE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		02E070C3154093D700BF4BCE /* DailyChallenge-Info.plist */ = {isa = PBXFileReference; path = "DailyChallenge-Info.plist"; sourceTree = "<group>"; };
+		02E070C5154093D700BF4BCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		02E070C7154093D700BF4BCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		02E070C9154093D700BF4BCE /* DailyChallenge-Prefix.pch */ = {isa = PBXFileReference; path = "DailyChallenge-Prefix.pch"; sourceTree = "<group>"; };
+		02E070CA154093D700BF4BCE /* RFAppDelegate.h */ = {isa = PBXFileReference; path = RFAppDelegate.h; sourceTree = "<group>"; };
+		02E070CB154093D700BF4BCE /* RFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFAppDelegate.m; sourceTree = "<group>"; };
+		02E070CD154093D700BF4BCE /* RFRootViewController.h */ = {isa = PBXFileReference; path = RFRootViewController.h; sourceTree = "<group>"; };
+		02E070CE154093D700BF4BCE /* RFRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFRootViewController.m; sourceTree = "<group>"; };
+		02E070D0154093D700BF4BCE /* RFDataViewController.h */ = {isa = PBXFileReference; path = RFDataViewController.h; sourceTree = "<group>"; };
+		02E070D1154093D700BF4BCE /* RFDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFDataViewController.m; sourceTree = "<group>"; };
+		02E070D3154093D700BF4BCE /* RFModelController.h */ = {isa = PBXFileReference; path = RFModelController.h; sourceTree = "<group>"; };
+		02E070D4154093D700BF4BCE /* RFModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFModelController.m; sourceTree = "<group>"; };
+		02E070D7154093D700BF4BCE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		02E070DA154093D800BF4BCE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		02E070E1154093D800BF4BCE /* DailyChallengeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyChallengeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E070E2154093D800BF4BCE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		02E070EA154093D800BF4BCE /* DailyChallengeTests-Info.plist */ = {isa = PBXFileReference; path = "DailyChallengeTests-Info.plist"; sourceTree = "<group>"; };
+		02E070EC154093D800BF4BCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		02E070EE154093D800BF4BCE /* DailyChallengeTests.h */ = {isa = PBXFileReference; path = DailyChallengeTests.h; sourceTree = "<group>"; };
+		02E070EF154093D800BF4BCE /* DailyChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DailyChallengeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02E070B4154093D700BF4BCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E070BC154093D700BF4BCE /* UIKit.framework in Frameworks */,
+				02E070BE154093D700BF4BCE /* Foundation.framework in Frameworks */,
+				02E070C0154093D700BF4BCE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E070DD154093D800BF4BCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E070E3154093D800BF4BCE /* SenTestingKit.framework in Frameworks */,
+				02E070E4154093D800BF4BCE /* UIKit.framework in Frameworks */,
+				02E070E5154093D800BF4BCE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02E070AC154093D700BF4BCE = {
+			isa = PBXGroup;
+			children = (
+				02E070C1154093D700BF4BCE /* DailyChallenge */,
+				02E070E8154093D800BF4BCE /* DailyChallengeTests */,
+				02E070BA154093D700BF4BCE /* Frameworks */,
+				02E070B8154093D700BF4BCE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02E070B8154093D700BF4BCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02E070B7154093D700BF4BCE /* DailyChallenge.app */,
+				02E070E1154093D800BF4BCE /* DailyChallengeTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02E070BA154093D700BF4BCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02E070BB154093D700BF4BCE /* UIKit.framework */,
+				02E070BD154093D700BF4BCE /* Foundation.framework */,
+				02E070BF154093D700BF4BCE /* CoreGraphics.framework */,
+				02E070E2154093D800BF4BCE /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02E070C1154093D700BF4BCE /* DailyChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				02E070CA154093D700BF4BCE /* RFAppDelegate.h */,
+				02E070CB154093D700BF4BCE /* RFAppDelegate.m */,
+				02E070CD154093D700BF4BCE /* RFRootViewController.h */,
+				02E070CE154093D700BF4BCE /* RFRootViewController.m */,
+				02E070D0154093D700BF4BCE /* RFDataViewController.h */,
+				02E070D1154093D700BF4BCE /* RFDataViewController.m */,
+				02E070D3154093D700BF4BCE /* RFModelController.h */,
+				02E070D4154093D700BF4BCE /* RFModelController.m */,
+				02E070D6154093D700BF4BCE /* MainStoryboard_iPhone.storyboard */,
+				02E070D9154093D800BF4BCE /* MainStoryboard_iPad.storyboard */,
+				02E070C2154093D700BF4BCE /* Supporting Files */,
+			);
+			path = DailyChallenge;
+			sourceTree = "<group>";
+		};
+		02E070C2154093D700BF4BCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02E070C3154093D700BF4BCE /* DailyChallenge-Info.plist */,
+				02E070C4154093D700BF4BCE /* InfoPlist.strings */,
+				02E070C7154093D700BF4BCE /* main.m */,
+				02E070C9154093D700BF4BCE /* DailyChallenge-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02E070E8154093D800BF4BCE /* DailyChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				02E070EE154093D800BF4BCE /* DailyChallengeTests.h */,
+				02E070EF154093D800BF4BCE /* DailyChallengeTests.m */,
+				02E070E9154093D800BF4BCE /* Supporting Files */,
+			);
+			path = DailyChallengeTests;
+			sourceTree = "<group>";
+		};
+		02E070E9154093D800BF4BCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02E070EA154093D800BF4BCE /* DailyChallengeTests-Info.plist */,
+				02E070EB154093D800BF4BCE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02E070B6154093D700BF4BCE /* DailyChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02E070F3154093D800BF4BCE /* Build configuration list for PBXNativeTarget "DailyChallenge" */;
+			buildPhases = (
+				02E070B3154093D700BF4BCE /* Sources */,
+				02E070B4154093D700BF4BCE /* Frameworks */,
+				02E070B5154093D700BF4BCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyChallenge;
+			productName = DailyChallenge;
+			productReference = 02E070B7154093D700BF4BCE /* DailyChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02E070E0154093D800BF4BCE /* DailyChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02E070F6154093D800BF4BCE /* Build configuration list for PBXNativeTarget "DailyChallengeTests" */;
+			buildPhases = (
+				02E070DC154093D800BF4BCE /* Sources */,
+				02E070DD154093D800BF4BCE /* Frameworks */,
+				02E070DE154093D800BF4BCE /* Resources */,
+				02E070DF154093D800BF4BCE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02E070E7154093D800BF4BCE /* PBXTargetDependency */,
+			);
+			name = DailyChallengeTests;
+			productName = DailyChallengeTests;
+			productReference = 02E070E1154093D800BF4BCE /* DailyChallengeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02E070AE154093D700BF4BCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RF;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Itv;
+			};
+			buildConfigurationList = 02E070B1154093D700BF4BCE /* Build configuration list for PBXProject "DailyChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 02E070AC154093D700BF4BCE;
+			productRefGroup = 02E070B8154093D700BF4BCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02E070B6154093D700BF4BCE /* DailyChallenge */,
+				02E070E0154093D800BF4BCE /* DailyChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02E070B5154093D700BF4BCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E070C6154093D700BF4BCE /* InfoPlist.strings in Resources */,
+				02E070D8154093D700BF4BCE /* MainStoryboard_iPhone.storyboard in Resources */,
+				02E070DB154093D800BF4BCE /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E070DE154093D800BF4BCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E070ED154093D800BF4BCE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02E070DF154093D800BF4BCE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02E070B3154093D700BF4BCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E070C8154093D700BF4BCE /* main.m in Sources */,
+				02E070CC154093D700BF4BCE /* RFAppDelegate.m in Sources */,
+				02E070CF154093D700BF4BCE /* RFRootViewController.m in Sources */,
+				02E070D2154093D700BF4BCE /* RFDataViewController.m in Sources */,
+				02E070D5154093D700BF4BCE /* RFModelController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E070DC154093D800BF4BCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E070F0154093D800BF4BCE /* DailyChallengeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02E070E7154093D800BF4BCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02E070B6154093D700BF4BCE /* DailyChallenge */;
+			targetProxy = 02E070E6154093D800BF4BCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02E070C4154093D700BF4BCE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02E070C5154093D700BF4BCE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		02E070D6154093D700BF4BCE /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02E070D7154093D700BF4BCE /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		02E070D9154093D800BF4BCE /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02E070DA154093D800BF4BCE /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		02E070EB154093D800BF4BCE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02E070EC154093D800BF4BCE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02E070F1154093D800BF4BCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02E070F2154093D800BF4BCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02E070F4154093D800BF4BCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DailyChallenge/DailyChallenge-Prefix.pch";
+				INFOPLIST_FILE = "DailyChallenge/DailyChallenge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		02E070F5154093D800BF4BCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DailyChallenge/DailyChallenge-Prefix.pch";
+				INFOPLIST_FILE = "DailyChallenge/DailyChallenge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		02E070F7154093D800BF4BCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DailyChallenge.app/DailyChallenge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DailyChallenge/DailyChallenge-Prefix.pch";
+				INFOPLIST_FILE = "DailyChallengeTests/DailyChallengeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		02E070F8154093D800BF4BCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DailyChallenge.app/DailyChallenge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DailyChallenge/DailyChallenge-Prefix.pch";
+				INFOPLIST_FILE = "DailyChallengeTests/DailyChallengeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02E070B1154093D700BF4BCE /* Build configuration list for PBXProject "DailyChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E070F1154093D800BF4BCE /* Debug */,
+				02E070F2154093D800BF4BCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02E070F3154093D800BF4BCE /* Build configuration list for PBXNativeTarget "DailyChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E070F4154093D800BF4BCE /* Debug */,
+				02E070F5154093D800BF4BCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		02E070F6154093D800BF4BCE /* Build configuration list for PBXNativeTarget "DailyChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E070F7154093D800BF4BCE /* Debug */,
+				02E070F8154093D800BF4BCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02E070AE154093D700BF4BCE /* Project object */;
+}
