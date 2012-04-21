@@ -1,0 +1,9 @@
+PODS:
+  - JSONKit (1.4)
+  - RFLibrary (1.0.1)
+  - Reachability (3.0.0)
+
+DEPENDENCIES:
+  - JSONKit (~> 1.4)
+  - RFLibrary (from `git@github.com:bryceredd/RFLibrary.git')
+  - Reachability (~> 3.0.0)
