@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RFRootViewController : UIViewController <UIPageViewControllerDelegate>
+@interface RFRootViewController : UIViewController <UIScrollViewDelegate>
 
-@property (strong, nonatomic) UIPageViewController *pageViewController;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
