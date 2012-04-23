@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D50b" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Challenge" representedClassName="Challenge" syncable="YES">
+        <attribute name="challenge" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="imageCredit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quote" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quoteCredit" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tasks" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ChallengeTask" syncable="YES"/>
+    </entity>
+    <entity name="ChallengeTask" syncable="YES">
+        <attribute name="placeholder" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Challenge" positionX="160" positionY="192" width="128" height="150"/>
+        <element name="ChallengeTask" positionX="331" positionY="192" width="128" height="60"/>
+    </elements>
+</model>

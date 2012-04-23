@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DDHttpRequest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>DailyChallenge.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>02A05C361544FC2400667D32</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>02E070B6154093D700BF4BCE</key>
 		<dict>
 			<key>primary</key>

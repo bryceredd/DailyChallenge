@@ -9,6 +9,7 @@ Challenge = require './model/Challenge'
 createServer = ->
 
   model = new Model DB
+  model.connect()
   challenge = new Challenge 
 
   app = express.createServer()
@@ -25,6 +26,11 @@ createServer = ->
     challenge.findById req.params.id, (err, item) ->
       res.send err, 500 if err?
       res.send item
+
+  app.get  '/challenges', (req, res) ->
+    challenge.findAll (err, items) ->
+      res.send err, 500 if err?
+      res.send items
 
   return app
 

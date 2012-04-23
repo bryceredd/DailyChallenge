@@ -78,12 +78,6 @@
     float leftPercent = midPercent - 1;
     float rightPercent = midPercent + 1;
 
-    NSLog(@"percnet : %f", midPercent);
-    
-    /*setFrameX(self.leftViewController.view, leftPercent * 1.f);
-    setFrameX(self.middleViewController.view, midPercent * 1.f + [self dayWidth]);
-    setFrameX(self.rightViewController.view, rightPercent * 1.f + [self dayWidth]*2);*/
-
     self.leftViewController.view.layer.transform = [self transformForPercent:leftPercent];
     self.middleViewController.view.layer.transform = [self transformForPercent:midPercent];
     self.rightViewController.view.layer.transform = [self transformForPercent:rightPercent];

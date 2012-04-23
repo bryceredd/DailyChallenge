@@ -14,3 +14,5 @@
 #endif
 
 #import "RFMacros.h"
+
+#define CHALLENGE_API @"localhost:2300"

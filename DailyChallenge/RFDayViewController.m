@@ -7,6 +7,7 @@
 //
 
 #import "RFDayViewController.h"
+#import "RFChallengeService.h"
 
 @interface RFDayViewController ()
 
@@ -27,7 +28,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    [[RFChallengeService new] fetchNewChallenges:^(NSArray* challenges) {
+    
+    }];
 }
 
 - (void)viewDidUnload

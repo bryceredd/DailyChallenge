@@ -29,6 +29,9 @@ class Challenge
   findById: (id, cb) =>
     @Model.findById id, cb
 
+  findAll: (cb) =>
+    @Model.find {}, cb
+
   save: (body, cb) =>
     challenge = new @Model body
     challenge.save cb

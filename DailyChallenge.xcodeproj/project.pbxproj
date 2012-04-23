@@ -10,6 +10,15 @@
 		02780F7615437310006332E0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02780F7415437300006332E0 /* QuartzCore.framework */; };
 		02780F7815437318006332E0 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02780F7715437318006332E0 /* CoreText.framework */; };
 		02780F971544671A006332E0 /* RFDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02780F961544671A006332E0 /* RFDayViewController.m */; };
+		02A05C2C1544F9A200667D32 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02A05C2A1544F9A200667D32 /* Model.xcdatamodeld */; };
+		02A05C2D1544F9A200667D32 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02A05C2A1544F9A200667D32 /* Model.xcdatamodeld */; };
+		02A05C4B1544FDFE00667D32 /* DDHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A05C4A1544FDFE00667D32 /* DDHTTPRequest.m */; };
+		02A05C4C1544FDFE00667D32 /* DDHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A05C4A1544FDFE00667D32 /* DDHTTPRequest.m */; };
+		02A05C4F1544FE6300667D32 /* Challenge.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A05C4E1544FE6300667D32 /* Challenge.m */; };
+		02A05C501544FE6300667D32 /* Challenge.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A05C4E1544FE6300667D32 /* Challenge.m */; };
+		02A05C531544FE9F00667D32 /* RFChallengeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A05C521544FE9F00667D32 /* RFChallengeService.m */; };
+		02A05C541544FE9F00667D32 /* RFChallengeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A05C521544FE9F00667D32 /* RFChallengeService.m */; };
+		02A05C56154500F100667D32 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A05C55154500F000667D32 /* CoreData.framework */; };
 		02E070BC154093D700BF4BCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E070BB154093D700BF4BCE /* UIKit.framework */; };
 		02E070BE154093D700BF4BCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E070BD154093D700BF4BCE /* Foundation.framework */; };
 		02E070C0154093D700BF4BCE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E070BF154093D700BF4BCE /* CoreGraphics.framework */; };
@@ -43,6 +52,14 @@
 		02780F7715437318006332E0 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		02780F951544671A006332E0 /* RFDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDayViewController.h; sourceTree = "<group>"; };
 		02780F961544671A006332E0 /* RFDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDayViewController.m; sourceTree = "<group>"; };
+		02A05C2B1544F9A200667D32 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		02A05C491544FDFE00667D32 /* DDHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHTTPRequest.h; sourceTree = "<group>"; };
+		02A05C4A1544FDFE00667D32 /* DDHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHTTPRequest.m; sourceTree = "<group>"; };
+		02A05C4D1544FE6300667D32 /* Challenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Challenge.h; sourceTree = "<group>"; };
+		02A05C4E1544FE6300667D32 /* Challenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Challenge.m; sourceTree = "<group>"; };
+		02A05C511544FE9F00667D32 /* RFChallengeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFChallengeService.h; sourceTree = "<group>"; };
+		02A05C521544FE9F00667D32 /* RFChallengeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFChallengeService.m; sourceTree = "<group>"; };
+		02A05C55154500F000667D32 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		02E070B7154093D700BF4BCE /* DailyChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E070BB154093D700BF4BCE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		02E070BD154093D700BF4BCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02A05C56154500F100667D32 /* CoreData.framework in Frameworks */,
 				02780F7815437318006332E0 /* CoreText.framework in Frameworks */,
 				02780F7615437310006332E0 /* QuartzCore.framework in Frameworks */,
 				02E070BC154093D700BF4BCE /* UIKit.framework in Frameworks */,
@@ -98,6 +116,9 @@
 		02780F8915437768006332E0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				02A05C2A1544F9A200667D32 /* Model.xcdatamodeld */,
+				02A05C4D1544FE6300667D32 /* Challenge.h */,
+				02A05C4E1544FE6300667D32 /* Challenge.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -118,6 +139,8 @@
 		02780F8C1543777E006332E0 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				02A05C511544FE9F00667D32 /* RFChallengeService.h */,
+				02A05C521544FE9F00667D32 /* RFChallengeService.m */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -125,6 +148,8 @@
 		02780F8D154377A3006332E0 /* Connection */ = {
 			isa = PBXGroup;
 			children = (
+				02A05C491544FDFE00667D32 /* DDHTTPRequest.h */,
+				02A05C4A1544FDFE00667D32 /* DDHTTPRequest.m */,
 			);
 			name = Connection;
 			sourceTree = "<group>";
@@ -152,6 +177,7 @@
 		02E070BA154093D700BF4BCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02A05C55154500F000667D32 /* CoreData.framework */,
 				02780F7715437318006332E0 /* CoreText.framework */,
 				02780F7415437300006332E0 /* QuartzCore.framework */,
 				02E070BB154093D700BF4BCE /* UIKit.framework */,
@@ -336,6 +362,10 @@
 				02E070CC154093D700BF4BCE /* RFAppDelegate.m in Sources */,
 				02E070CF154093D700BF4BCE /* RFRootViewController.m in Sources */,
 				02780F971544671A006332E0 /* RFDayViewController.m in Sources */,
+				02A05C2C1544F9A200667D32 /* Model.xcdatamodeld in Sources */,
+				02A05C4B1544FDFE00667D32 /* DDHTTPRequest.m in Sources */,
+				02A05C4F1544FE6300667D32 /* Challenge.m in Sources */,
+				02A05C531544FE9F00667D32 /* RFChallengeService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +374,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				02E070F0154093D800BF4BCE /* DailyChallengeTests.m in Sources */,
+				02A05C2D1544F9A200667D32 /* Model.xcdatamodeld in Sources */,
+				02A05C4C1544FDFE00667D32 /* DDHTTPRequest.m in Sources */,
+				02A05C501544FE6300667D32 /* Challenge.m in Sources */,
+				02A05C541544FE9F00667D32 /* RFChallengeService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +577,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		02A05C2A1544F9A200667D32 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				02A05C2B1544F9A200667D32 /* Model.xcdatamodel */,
+			);
+			currentVersion = 02A05C2B1544F9A200667D32 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 02E070AE154093D700BF4BCE /* Project object */;
 }
