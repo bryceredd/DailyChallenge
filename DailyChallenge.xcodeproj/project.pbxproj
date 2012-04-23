@@ -105,10 +105,10 @@
 		02780F8B1543777A006332E0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				02E070CD154093D700BF4BCE /* RFRootViewController.h */,
-				02E070CE154093D700BF4BCE /* RFRootViewController.m */,
 				02E070D6154093D700BF4BCE /* MainStoryboard_iPhone.storyboard */,
 				02E070D9154093D800BF4BCE /* MainStoryboard_iPad.storyboard */,
+				02E070CD154093D700BF4BCE /* RFRootViewController.h */,
+				02E070CE154093D700BF4BCE /* RFRootViewController.m */,
 				02780F951544671A006332E0 /* RFDayViewController.h */,
 				02780F961544671A006332E0 /* RFDayViewController.m */,
 			);

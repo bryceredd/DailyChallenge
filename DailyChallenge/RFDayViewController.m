@@ -13,6 +13,7 @@
 @end
 
 @implementation RFDayViewController
+@synthesize table;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +32,7 @@
 
 - (void)viewDidUnload
 {
+    [self setTable:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

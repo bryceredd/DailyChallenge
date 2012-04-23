@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface RFDayViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *table;
 
 @end
