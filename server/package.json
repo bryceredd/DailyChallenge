@@ -8,6 +8,7 @@
   },
   "scripts":{
     "start":"node_modules/.bin/coffee app.coffee",
+    "test": "node_modules/.bin/mocha --compilers coffee:coffee-script",
     "install":""
   },
   "main": "app.coffee",

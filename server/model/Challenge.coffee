@@ -2,9 +2,10 @@ mongoose = require 'mongoose'
 Schema = mongoose.Schema
 util = require 'util'
 
-class Challenge 
 
-  constructor: ->
+class Challenge
+
+  constructor: () ->
 
     ChallengeTaskSchema = new Schema {
       placeholder: String
@@ -17,17 +18,13 @@ class Challenge
       imageUrl: String
       imageCredit: String
       challenge: String
-      challengeTasks: [ChallengeTaskSchema]
+      tasks: [ChallengeTaskSchema]
     }
-    
-    mongoose.model "Challenge", ChallengeSchema
-    mongoose.model "ChallengeTask", ChallengeTaskSchema
 
-    @Model = mongoose.model "Challenge"
-    @TaskModel = mongoose.model "ChallengeTask"
+    @Model = mongoose.model "Challenge", ChallengeSchema
+    @TaskModel = mongoose.model "ChallengeTask", ChallengeTaskSchema
 
-  findById: (id, cb) =>
-    @Model.findById id, cb
+  findById: (id, cb) => @Model.findById id, cb
 
   findAll: (cb) =>
     @Model.find {}, cb
@@ -39,7 +36,9 @@ class Challenge
 
   createTask: (body, cb) =>
     new @TaskModel body
-  
+
+  tagletFromTag: (tag) =>
 
 
 module.exports = Challenge
+

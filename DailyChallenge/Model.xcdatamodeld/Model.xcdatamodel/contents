@@ -7,10 +7,11 @@
         <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="quote" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="quoteCredit" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="tasks" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ChallengeTask" syncable="YES"/>
+        <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ChallengeTask" inverseName="relationship" inverseEntity="ChallengeTask" syncable="YES"/>
     </entity>
-    <entity name="ChallengeTask" syncable="YES">
+    <entity name="ChallengeTask" representedClassName="ChallengeTask" syncable="YES">
         <attribute name="placeholder" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Challenge" inverseName="tasks" inverseEntity="Challenge" syncable="YES"/>
     </entity>
     <elements>
         <element name="Challenge" positionX="160" positionY="192" width="128" height="150"/>

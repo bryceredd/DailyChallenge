@@ -11,5 +11,6 @@
 @interface RFRootViewController : UIViewController <UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, strong) NSManagedObjectContext* managedObjectContext;
 
 @end

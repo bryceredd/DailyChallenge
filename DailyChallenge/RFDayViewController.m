@@ -14,24 +14,14 @@
 @end
 
 @implementation RFDayViewController
-@synthesize table;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@synthesize table, challenge;
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    [[RFChallengeService new] fetchNewChallenges:^(NSArray* challenges) {
-    
-    }];
 }
 
 - (void)viewDidUnload
@@ -45,5 +35,51 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+
+#pragma mark - UITableView Datasource
+ 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60.f;
+}
+ 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 4;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString* identifier = @"";
+    switch (indexPath.row) {
+      case 0:
+        identifier = @"quoteCell";
+        break;
+      case 1:
+        identifier = @"creditCell";
+        break;
+      case 2: 
+        identifier = @"spaceCell";
+        break;
+      case 3:
+        identifier = @"goalCell";
+        break;
+      default:
+        break;
+    } 
+ 
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    
+    if([cell respondsToSelector:@selector(setChallenge:)]) 
+        [(id)cell setChallenge:(id)self.challenge];
+    
+ 
+    return cell;
+}
+ 
+#pragma mark - UITableView Delegate methods
+ 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
 
 @end

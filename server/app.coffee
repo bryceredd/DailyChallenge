@@ -10,7 +10,7 @@ createServer = ->
 
   model = new Model DB
   model.connect()
-  challenge = new Challenge 
+  challenge = new Challenge
 
   app = express.createServer()
 
@@ -38,3 +38,4 @@ createServer = ->
 if module == require.main
   app = createServer()
   app.listen PORT
+  console.log "listening on port #{PORT}"

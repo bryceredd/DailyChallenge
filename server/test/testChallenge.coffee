@@ -5,18 +5,17 @@ assert = require 'assert'
 mongoose = require 'mongoose'
 Challenge = require '../model/Challenge'
 Model = require '../model/index'
-ObjectId = mongoose.Types.ObjectId
 
 generateChallenge = ->
   challenge = new Challenge
-  tasks = ["Billy", "Bobby", "Sandy"].map (body) -> challenge.createTask {"placeholder":body}
+  tasks = ["Billy", "Bobby", "Sandy"].map (body) -> challenge.createTask {"placeholder": body}
 
   quote: "He who stands on toilet, is high on pot"
   quoteCredit: "Ping Pong Xao"
   imageUrl: "http://lorempixum.com/300/300"
   imageCredit: "(C) Photo Amigos"
   challenge: "Bring soda to 3 of your close friends"
-  challengeTasks: tasks
+  tasks: tasks
 
 
 describe 'challenge tests', ->
@@ -27,13 +26,12 @@ describe 'challenge tests', ->
 
   beforeEach (done) ->
     challenge.Model.collection.drop (err) ->
-      tasks = ["Billy", "Bobby", "Sandy"].map (body) -> challenge.createTask {"placeholder":body}
+      tasks = ["Billy", "Bobby", "Sandy"].map (body) -> challenge.createTask {"placeholder": body}
       challenge.save item, done
 
   describe "reading a challenge", ->
     it 'should return a challenge', (done) ->
       challenge.findById item.id, (err, item) ->
         done()
-
 
 

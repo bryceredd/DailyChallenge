@@ -7,16 +7,19 @@
 //
 
 #import "RFChallengeService.h"
+#import "NSManagedObject+JSON.h"
 #import "DDHTTPRequest.h"
+#import "RFCoreDataModel.h"
 
 @implementation RFChallengeService
 
 - (void) fetchNewChallenges:(void(^)(NSArray*))callback {
+
     NSURL* url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@/challenges", CHALLENGE_API]];
     DDHTTPRequest* request = [DDHTTPRequest getRequestForURL:url];
     
     [request sendAsyncWithCallback:^(DDHTTPRequest* request) {
-        NSLog(@"%@", [request responseStringValueUTF8Encoding]);
+        callback([Challenge objectWithJSON:[request responseStringValueUTF8Encoding] inContext:[RFCoreDataModel managedObjectContext]]);
     }];
 }
 

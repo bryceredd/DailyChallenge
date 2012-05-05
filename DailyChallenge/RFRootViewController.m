@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "RFRootViewController.h"
 #import "RFDayViewController.h"
+#import "RFChallengeService.h"
 
 
 @interface RFRootViewController ()
@@ -29,10 +30,15 @@
 @synthesize scrollView;
 @synthesize leftViewController, rightViewController, middleViewController;
 @synthesize controllers;
+@synthesize managedObjectContext;
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[RFChallengeService new] fetchNewChallenges:^(NSArray* challenges) {
+        NSLog(@"challenges!: %@", challenges);
+    }];
 
     self.leftViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RFDayViewController"];
     self.rightViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RFDayViewController"];

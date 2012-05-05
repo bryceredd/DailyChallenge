@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Challenge.h"
 
 @interface RFDayViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITableView *table;
-
+@property (nonatomic, strong) Challenge* challenge;
 @end
