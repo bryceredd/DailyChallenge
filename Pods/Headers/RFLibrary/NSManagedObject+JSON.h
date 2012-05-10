@@ -1,1 +1,0 @@
-../../RFLibrary/RFLibrary/NSManagedObject+JSON.h
