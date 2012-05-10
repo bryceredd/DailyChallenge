@@ -14,6 +14,8 @@ createServer = ->
 
   app = express.createServer()
 
+  app.use express.static(__dirname + '/public')
+
   app.disconnect = ->
       model.disconnect()
 

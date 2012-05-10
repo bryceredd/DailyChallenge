@@ -8,7 +8,8 @@
 
 #import "RFAppDelegate.h"
 #import "RFRootViewController.h"
-#import <CoreData/CoreData.h>
+
+#import "RFMacros.h"
 
 @implementation RFAppDelegate
 

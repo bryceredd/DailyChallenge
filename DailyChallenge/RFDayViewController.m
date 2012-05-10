@@ -7,6 +7,7 @@
 //
 
 #import "RFDayViewController.h"
+#import "UIImageView+AFNetworking.h"
 #import "RFChallengeService.h"
 
 @interface RFDayViewController ()
@@ -14,8 +15,12 @@
 @end
 
 @implementation RFDayViewController
-
-@synthesize table, challenge;
+@synthesize quote;
+@synthesize quoteCredit;
+@synthesize challengeView;
+@synthesize challengeLabel;
+@synthesize imageView;
+@synthesize scrollView, challenge;
 
 
 - (void)viewDidLoad
@@ -26,9 +31,13 @@
 
 - (void)viewDidUnload
 {
-    [self setTable:nil];
+    [self setScrollView:nil];
+    [self setQuote:nil];
+    [self setQuoteCredit:nil];
+    [self setChallengeView:nil];
+    [self setChallengeLabel:nil];
+    [self setImageView:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -36,50 +45,13 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-
-#pragma mark - UITableView Datasource
- 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 60.f;
-}
- 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString* identifier = @"";
-    switch (indexPath.row) {
-      case 0:
-        identifier = @"quoteCell";
-        break;
-      case 1:
-        identifier = @"creditCell";
-        break;
-      case 2: 
-        identifier = @"spaceCell";
-        break;
-      case 3:
-        identifier = @"goalCell";
-        break;
-      default:
-        break;
-    } 
- 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+- (void) setChallenge:(Challenge *)data {
+    challenge = data;
     
-    if([cell respondsToSelector:@selector(setChallenge:)]) 
-        [(id)cell setChallenge:(id)self.challenge];
-    
- 
-    return cell;
+    self.quote.text = self.challenge.quote;
+    self.quoteCredit.text = self.challenge.quoteCredit;
+    self.challengeLabel.text = self.challenge.challenge;
+    [self.imageView setImageWithURL:[NSURL URLWithString:self.challenge.imageUrl]];
 }
- 
-#pragma mark - UITableView Delegate methods
- 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-}
-
 
 @end

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		022CE52E1548A102008309C0 /* NSManagedObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 022CE52D1548A102008309C0 /* NSManagedObject+JSON.m */; };
 		022CE5311548AE7D008309C0 /* RFCoreDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 022CE5301548AE7D008309C0 /* RFCoreDataModel.m */; };
 		02780F7615437310006332E0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02780F7415437300006332E0 /* QuartzCore.framework */; };
 		02780F7815437318006332E0 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02780F7715437318006332E0 /* CoreText.framework */; };
@@ -19,10 +18,6 @@
 		02A05C56154500F100667D32 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A05C55154500F000667D32 /* CoreData.framework */; };
 		02A2D4B0154DA935000A8BF1 /* ChallengeTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A2D4AF154DA935000A8BF1 /* ChallengeTask.m */; };
 		02A2D4B4154DA9CD000A8BF1 /* Challenge.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A2D4B3154DA9CD000A8BF1 /* Challenge.m */; };
-		02A2D4CA154DB57D000A8BF1 /* MethodSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A2D4C9154DB57D000A8BF1 /* MethodSwizzler.m */; };
-		02A2D4CE154DDB31000A8BF1 /* RFQuoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A2D4CD154DDB31000A8BF1 /* RFQuoteCell.m */; };
-		02A2D4D1154DDB3B000A8BF1 /* RFCreditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A2D4D0154DDB3B000A8BF1 /* RFCreditCell.m */; };
-		02A2D4D4154DDBBA000A8BF1 /* RFGoalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A2D4D3154DDBBA000A8BF1 /* RFGoalCell.m */; };
 		02E070BC154093D700BF4BCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E070BB154093D700BF4BCE /* UIKit.framework */; };
 		02E070BE154093D700BF4BCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E070BD154093D700BF4BCE /* Foundation.framework */; };
 		02E070C0154093D700BF4BCE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E070BF154093D700BF4BCE /* CoreGraphics.framework */; };
@@ -37,7 +32,6 @@
 		02E070E5154093D800BF4BCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E070BD154093D700BF4BCE /* Foundation.framework */; };
 		02E070ED154093D800BF4BCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02E070EB154093D800BF4BCE /* InfoPlist.strings */; };
 		02E070F0154093D800BF4BCE /* DailyChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E070EF154093D800BF4BCE /* DailyChallengeTests.m */; };
-		02F674FB154CB90A003CFC30 /* DDHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F674FA154CB90A003CFC30 /* DDHTTPRequest.m */; };
 		1B62D4BB49344DF29D9AC2C8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFE5D6352A449D6AA7DCC2C /* libPods.a */; };
 		75F3ED1E29D44280A3CB7F51 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFE5D6352A449D6AA7DCC2C /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -53,8 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		022CE52C1548A102008309C0 /* NSManagedObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+JSON.h"; sourceTree = "<group>"; };
-		022CE52D1548A102008309C0 /* NSManagedObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+JSON.m"; sourceTree = "<group>"; };
 		022CE52F1548AE7D008309C0 /* RFCoreDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFCoreDataModel.h; sourceTree = "<group>"; };
 		022CE5301548AE7D008309C0 /* RFCoreDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFCoreDataModel.m; sourceTree = "<group>"; };
 		02780F7415437300006332E0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -69,14 +61,6 @@
 		02A2D4AF154DA935000A8BF1 /* ChallengeTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeTask.m; sourceTree = "<group>"; };
 		02A2D4B2154DA9CD000A8BF1 /* Challenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Challenge.h; sourceTree = "<group>"; };
 		02A2D4B3154DA9CD000A8BF1 /* Challenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Challenge.m; sourceTree = "<group>"; };
-		02A2D4C8154DB57D000A8BF1 /* MethodSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzler.h; sourceTree = "<group>"; };
-		02A2D4C9154DB57D000A8BF1 /* MethodSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzler.m; sourceTree = "<group>"; };
-		02A2D4CC154DDB31000A8BF1 /* RFQuoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFQuoteCell.h; sourceTree = "<group>"; };
-		02A2D4CD154DDB31000A8BF1 /* RFQuoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFQuoteCell.m; sourceTree = "<group>"; };
-		02A2D4CF154DDB3B000A8BF1 /* RFCreditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFCreditCell.h; sourceTree = "<group>"; };
-		02A2D4D0154DDB3B000A8BF1 /* RFCreditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFCreditCell.m; sourceTree = "<group>"; };
-		02A2D4D2154DDBBA000A8BF1 /* RFGoalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFGoalCell.h; sourceTree = "<group>"; };
-		02A2D4D3154DDBBA000A8BF1 /* RFGoalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFGoalCell.m; sourceTree = "<group>"; };
 		02E070B7154093D700BF4BCE /* DailyChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E070BB154093D700BF4BCE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		02E070BD154093D700BF4BCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,8 +81,6 @@
 		02E070EC154093D800BF4BCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		02E070EE154093D800BF4BCE /* DailyChallengeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DailyChallengeTests.h; sourceTree = "<group>"; };
 		02E070EF154093D800BF4BCE /* DailyChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DailyChallengeTests.m; sourceTree = "<group>"; };
-		02F674F9154CB90A003CFC30 /* DDHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHTTPRequest.h; sourceTree = "<group>"; };
-		02F674FA154CB90A003CFC30 /* DDHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHTTPRequest.m; sourceTree = "<group>"; };
 		7FFE5D6352A449D6AA7DCC2C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B857EFE19BE34977B31640B0 /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -135,15 +117,11 @@
 		02780F8915437768006332E0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				02A2D4C8154DB57D000A8BF1 /* MethodSwizzler.h */,
-				02A2D4C9154DB57D000A8BF1 /* MethodSwizzler.m */,
 				02A05C2A1544F9A200667D32 /* Model.xcdatamodeld */,
 				02A2D4B2154DA9CD000A8BF1 /* Challenge.h */,
 				02A2D4B3154DA9CD000A8BF1 /* Challenge.m */,
 				02A2D4AE154DA935000A8BF1 /* ChallengeTask.h */,
 				02A2D4AF154DA935000A8BF1 /* ChallengeTask.m */,
-				022CE52C1548A102008309C0 /* NSManagedObject+JSON.h */,
-				022CE52D1548A102008309C0 /* NSManagedObject+JSON.m */,
 				022CE52F1548AE7D008309C0 /* RFCoreDataModel.h */,
 				022CE5301548AE7D008309C0 /* RFCoreDataModel.m */,
 			);
@@ -153,7 +131,6 @@
 		02780F8B1543777A006332E0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				02A2D4CB154DDB20000A8BF1 /* Cells */,
 				02E070D6154093D700BF4BCE /* MainStoryboard_iPhone.storyboard */,
 				02E070D9154093D800BF4BCE /* MainStoryboard_iPad.storyboard */,
 				02E070CD154093D700BF4BCE /* RFRootViewController.h */,
@@ -176,23 +153,8 @@
 		02780F8D154377A3006332E0 /* Connection */ = {
 			isa = PBXGroup;
 			children = (
-				02F674F9154CB90A003CFC30 /* DDHTTPRequest.h */,
-				02F674FA154CB90A003CFC30 /* DDHTTPRequest.m */,
 			);
 			name = Connection;
-			sourceTree = "<group>";
-		};
-		02A2D4CB154DDB20000A8BF1 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				02A2D4CC154DDB31000A8BF1 /* RFQuoteCell.h */,
-				02A2D4CD154DDB31000A8BF1 /* RFQuoteCell.m */,
-				02A2D4CF154DDB3B000A8BF1 /* RFCreditCell.h */,
-				02A2D4D0154DDB3B000A8BF1 /* RFCreditCell.m */,
-				02A2D4D2154DDBBA000A8BF1 /* RFGoalCell.h */,
-				02A2D4D3154DDBBA000A8BF1 /* RFGoalCell.m */,
-			);
-			name = Cells;
 			sourceTree = "<group>";
 		};
 		02E070AC154093D700BF4BCE = {
@@ -405,15 +367,9 @@
 				02780F971544671A006332E0 /* RFDayViewController.m in Sources */,
 				02A05C2C1544F9A200667D32 /* Model.xcdatamodeld in Sources */,
 				02A05C531544FE9F00667D32 /* RFChallengeService.m in Sources */,
-				022CE52E1548A102008309C0 /* NSManagedObject+JSON.m in Sources */,
 				022CE5311548AE7D008309C0 /* RFCoreDataModel.m in Sources */,
-				02F674FB154CB90A003CFC30 /* DDHTTPRequest.m in Sources */,
 				02A2D4B0154DA935000A8BF1 /* ChallengeTask.m in Sources */,
 				02A2D4B4154DA9CD000A8BF1 /* Challenge.m in Sources */,
-				02A2D4CA154DB57D000A8BF1 /* MethodSwizzler.m in Sources */,
-				02A2D4CE154DDB31000A8BF1 /* RFQuoteCell.m in Sources */,
-				02A2D4D1154DDB3B000A8BF1 /* RFCreditCell.m in Sources */,
-				02A2D4D4154DDBBA000A8BF1 /* RFGoalCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

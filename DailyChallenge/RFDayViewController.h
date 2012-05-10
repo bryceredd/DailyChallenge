@@ -8,8 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "Challenge.h"
+#import "ImageViewCenteredFit.h"
 
 @interface RFDayViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITableView *table;
+
 @property (nonatomic, strong) Challenge* challenge;
+
+@property (weak, nonatomic) IBOutlet UIScrollView* scrollView;
+@property (weak, nonatomic) IBOutlet UILabel *quote;
+@property (weak, nonatomic) IBOutlet UILabel *quoteCredit;
+@property (weak, nonatomic) IBOutlet UIView *challengeView;
+@property (weak, nonatomic) IBOutlet UILabel *challengeLabel;
+@property (weak, nonatomic) IBOutlet ImageViewCenteredFit *imageView;
+
+
 @end

@@ -20,6 +20,7 @@
 @property (nonatomic, retain) NSString * quote;
 @property (nonatomic, retain) NSString * quoteCredit;
 @property (nonatomic, retain) NSSet *tasks;
+
 @end
 
 @interface Challenge (CoreDataGeneratedAccessors)

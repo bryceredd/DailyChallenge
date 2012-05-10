@@ -6,17 +6,16 @@
 //  Copyright (c) 2012 Itv. All rights reserved.
 //
 
-#import <CoreGraphics/CoreGraphics.h>
-#import <QuartzCore/QuartzCore.h>
 #import "RFRootViewController.h"
 #import "RFDayViewController.h"
 #import "RFChallengeService.h"
-
+#import "RFMacros.h"
 
 @interface RFRootViewController ()
 @property(nonatomic, strong) RFDayViewController *leftViewController;
 @property(nonatomic, strong) RFDayViewController *rightViewController;
 @property(nonatomic, strong) RFDayViewController *middleViewController;
+@property(nonatomic, strong) NSArray* challenges;
 @property(nonatomic, strong) NSArray *controllers;
 
 - (void)resetScrollViewController;
@@ -28,6 +27,7 @@
 @implementation RFRootViewController
 
 @synthesize scrollView;
+@synthesize challenges;
 @synthesize leftViewController, rightViewController, middleViewController;
 @synthesize controllers;
 @synthesize managedObjectContext;
@@ -36,8 +36,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[RFChallengeService new] fetchNewChallenges:^(NSArray* challenges) {
-        NSLog(@"challenges!: %@", challenges);
+    [[RFChallengeService new] fetchNewChallenges:^(NSArray* array) {
+        self.challenges = array;
     }];
 
     self.leftViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RFDayViewController"];
@@ -53,10 +53,6 @@
 
     [self.scrollView setContentSize:CGSizeMake([self dayWidth] * 3, 0)];
 
-    self.leftViewController.table.backgroundColor = RGB(255, 0, 0);
-    self.rightViewController.table.backgroundColor = RGB(255, 255, 0);
-    self.middleViewController.table.backgroundColor = RGB(0, 255, 255);
-
     [self resetScrollViewController];
 }
 
@@ -67,6 +63,18 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return ipad? YES : interfaceOrientation == UIInterfaceOrientationPortrait;
+}
+
+- (void) setChallenges:(NSArray *)array {
+    challenges = array;
+    
+    // refresh only the view controllers which need it
+    if(!self.leftViewController.challenge && challenges.count > 0)
+        self.leftViewController.challenge = [challenges objectAtIndex:0];
+    if(!self.middleViewController.challenge && challenges.count > 1)
+        self.middleViewController.challenge = [challenges objectAtIndex:1];
+    if(!self.rightViewController.challenge && challenges.count > 2)
+        self.rightViewController.challenge = [challenges objectAtIndex:2];
 }
 
 
@@ -81,8 +89,11 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scroll {
     float midPercent = (float)(self.scrollView.contentOffset.x - [self dayWidth]) / [self dayWidth];
-    float leftPercent = midPercent - 1;
-    float rightPercent = midPercent + 1;
+    
+    midPercent = fabsf(midPercent);
+
+    float leftPercent = 1 - midPercent;
+    float rightPercent = 1 - midPercent;
 
     self.leftViewController.view.layer.transform = [self transformForPercent:leftPercent];
     self.middleViewController.view.layer.transform = [self transformForPercent:midPercent];
@@ -92,26 +103,41 @@
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
 
+    BOOL hasAnotherChallenge = [self.challenges indexOfObject:self.rightViewController.challenge] < [self.challenges count] - 1;
+    BOOL hasPreviousChallenge = [self.challenges indexOfObject:self.leftViewController.challenge] > 0;
+
     // find which view controller is now the middle
     // we need to do this to prevent our view controllers from
     // being deallocd!
+    
+    BOOL didScrollToPrevious = self.scrollView.contentOffset.x < [self dayWidth];
+    BOOL didScrollToNext = self.scrollView.contentOffset.x > [self dayWidth];
+    
     RFDayViewController *mid = self.middleViewController;
     RFDayViewController *right = self.rightViewController;
     RFDayViewController *left = self.leftViewController;
 
-    if (self.scrollView.contentOffset.x < [self dayWidth]) {
+    if (didScrollToNext && hasAnotherChallenge) {
         self.leftViewController = right;
         self.middleViewController = left;
         self.rightViewController = mid;
+        
+        self.rightViewController.challenge = [self.challenges objectAtIndex:[self.challenges indexOfObject:self.middleViewController.challenge] + 1];
+        
+        [self resetScrollViewController];
     }
 
-    if (self.scrollView.contentOffset.x > [self dayWidth]) {
+    if (didScrollToPrevious && hasPreviousChallenge) {
         self.leftViewController = mid;
         self.middleViewController = right;
         self.rightViewController = left;
+        
+        self.rightViewController.challenge = [self.challenges objectAtIndex:[self.challenges indexOfObject:self.middleViewController.challenge] - 1];
+        
+        [self resetScrollViewController];
     }
 
-    [self resetScrollViewController];
+    
 }
 
 
@@ -121,7 +147,6 @@
     [self.controllers enumerateObjectsUsingBlock:^(UIViewController *controller, NSUInteger index, BOOL *stop) {
         controller.view.layer.transform = [self transformForPercent:0];
     }];
-    
     
     setFrameX(self.leftViewController.view, 0);
     setFrameX(self.middleViewController.view, [self dayWidth]);

@@ -8,19 +8,25 @@
 
 #import "RFChallengeService.h"
 #import "NSManagedObject+JSON.h"
-#import "DDHTTPRequest.h"
 #import "RFCoreDataModel.h"
+#import "AFNetworking.h"
 
 @implementation RFChallengeService
 
 - (void) fetchNewChallenges:(void(^)(NSArray*))callback {
 
     NSURL* url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@/challenges", CHALLENGE_API]];
-    DDHTTPRequest* request = [DDHTTPRequest getRequestForURL:url];
-    
-    [request sendAsyncWithCallback:^(DDHTTPRequest* request) {
-        callback([Challenge objectWithJSON:[request responseStringValueUTF8Encoding] inContext:[RFCoreDataModel managedObjectContext]]);
-    }];
+    AFJSONRequestOperation* operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[NSURLRequest requestWithURL:url] success:^(NSURLRequest* request, NSHTTPURLResponse* response, id json) { 
+        
+        NSArray* sorted = [[Challenge objectWithObject:json inContext:[RFCoreDataModel managedObjectContext]] sortedArrayUsingSelector:@selector(compare:)];
+        
+        // fetch the stored challenges from coredata, and mix them
+        
+        callback(sorted);
+        
+     } failure:nil];
+     
+     [operation start];
 }
 
 @end

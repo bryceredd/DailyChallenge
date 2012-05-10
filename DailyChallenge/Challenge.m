@@ -21,13 +21,8 @@
 @dynamic quoteCredit;
 @dynamic tasks;
 
-- (void) setValue:(id)value forKey:(NSString *)key {
-    if([key isEqualToString:@"tasks"]) {
-        value = [NSSet setWithArray:[ChallengeTask objectWithJSON:[value JSONString] inContext:self.managedObjectContext]];
-    } 
-    
-    [super setValue:value forKey:key];
+- (NSComparisonResult) compare:(Challenge*)challenge {
+    return [self.date compare:challenge.date];
 }
-
 
 @end
