@@ -16,6 +16,7 @@ class Challenge
       quote: String
       quoteCredit: String
       imageUrl: String
+      imagePath: String
       imageCredit: String
       challenge: String
       tasks: [ChallengeTaskSchema]

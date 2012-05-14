@@ -1,0 +1,21 @@
+input {
+  width:300px;
+}
+
+label {
+  width:150px;
+  display:inline-block;
+}
+
+textarea {
+  width:300px;
+  height:150px;
+}
+
+.tasks {
+  padding-top:20px;
+}
+
+.tasks input {
+  display:block;
+}

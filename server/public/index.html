@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>Daily Challenge API!</title>
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <h1>New Challenge</h1>
+  <form action="/challenge" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <div>
+        <label>Background</label>
+        <input type="file" name="file">
+      </div>
+      <div>
+        <label>Quote</label>
+        <textarea name="quote"> A new idea is delicate. It can be killed by a sneer or a yawn; it can be stabbed to death by a quip and worried to death by a frown on the right man’s brow." </textarea>
+      </div>
+      <div>
+        <label>Credit</label>
+        <input type="text" name="quoteCredit" placeholder="Mark Twain">
+      </div>
+      <div>
+        <label>Date</label>
+        <input type="text" name="date" placeholder="2012-03-14">
+      </div>
+      <div>
+        <label>Challenge</label>
+        <input type="text" name="challenge" placeholder="Write down three great ideas of the day">
+      </div>
+      <div class="tasks">
+        <label>Tasks</label>
+        <input type="text" name="task1" placeholder="Task1">
+        <input type="text" name="task2" placeholder="Task2 - leave blank if not needed">
+        <input type="text" name="task3" placeholder="Task3 - leave blank if not needed">
+        <input type="text" name="task4" placeholder="Task4 - leave blank if not needed">
+        <input type="text" name="task5" placeholder="Task5 - leave blank if not needed">
+      </div>
+      <input type="submit" value="Add Challenge">
+    </fieldset>
+  </form>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $.get("/challenges", function(events) {
+
+/*      var len = events.length
+      var html = ""
+      var str = ""
+
+      for (var i = 0; i < len; i++) {
+        str = "<option value='" + events[i]._id + "'>" + events[i].name + "</option>"
+        html += str
+      }
+
+      $("#events").append(html)*/
+
+    })
+  </script>
+</body>
+</html>
