@@ -11,23 +11,15 @@
 
 @class ChallengeTask;
 
-@interface Challenge : NSManagedObject
+@interface Challenge : NSObject
+@property (nonatomic) NSString * challenge;
+@property (nonatomic) NSDate * date;
+@property (nonatomic) NSString * imageCredit;
+@property (nonatomic) NSString * imagePath;
+@property (nonatomic) NSString * quote;
+@property (nonatomic) NSString * quoteCredit;
+@property (nonatomic) NSOrderedSet * tasks;
 
-@property (nonatomic, retain) NSString * challenge;
-@property (nonatomic, retain) NSDate * date;
-@property (nonatomic, retain) NSString * imageCredit;
-@property (nonatomic, retain) NSString * imageUrl;
-@property (nonatomic, retain) NSString * quote;
-@property (nonatomic, retain) NSString * quoteCredit;
-@property (nonatomic, retain) NSSet *tasks;
-
-@end
-
-@interface Challenge (CoreDataGeneratedAccessors)
-
-- (void)addTasksObject:(ChallengeTask *)value;
-- (void)removeTasksObject:(ChallengeTask *)value;
-- (void)addTasks:(NSSet *)values;
-- (void)removeTasks:(NSSet *)values;
+- (NSURL*) imageUrl;
 
 @end

@@ -10,6 +10,5 @@
 
 @interface RFCoreDataModel : NSObject
 
-+ (NSManagedObjectContext*) managedObjectContext;
 
 @end

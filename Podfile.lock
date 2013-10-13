@@ -1,11 +1,32 @@
 PODS:
   - AFNetworking (1.0RC1)
+  - ISO8601DateFormatter (0.6)
   - JSONKit (1.4)
-  - RFLibrary (1.0.3)
+  - JTObjectMapping (1.0.5)
+  - NLCoreData (0.4.16)
   - Reachability (3.0.0)
+  - RFLibrary (1.0.5):
+    - ISO8601DateFormatter (>= 0.6)
+    - NLCoreData (~> 0.4.5)
 
 DEPENDENCIES:
   - AFNetworking (>= 0.9.0)
   - JSONKit (~> 1.4)
-  - RFLibrary (from `git@github.com:bryceredd/RFLibrary.git')
+  - JTObjectMapping (= 1.0.5)
   - Reachability (~> 3.0.0)
+  - RFLibrary (from `git@github.com:bryceredd/RFLibrary.git`)
+
+EXTERNAL SOURCES:
+  RFLibrary:
+    :git: git@github.com:bryceredd/RFLibrary.git
+
+SPEC CHECKSUMS:
+  AFNetworking: b21c1252d437fd322e7db1caa93b163d76a362cb
+  ISO8601DateFormatter: 077ce9d8cfba171bc1ced6cba0d2ae4aefab7619
+  JSONKit: 0e3367114e2799047082628156e09893d8268f91
+  JTObjectMapping: c5ceacacc89030dc0d3403de3db2943ca601f869
+  NLCoreData: 536f79616aadb8758a7232bc8dc9658bcfedbd2e
+  Reachability: 500bd76bf6cd8ff2c6fb715fc5f44ef6e4c024f2
+  RFLibrary: b24cf394552701075310dcdf2b29ef5d08665215
+
+COCOAPODS: 0.23.0

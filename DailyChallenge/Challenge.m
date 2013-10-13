@@ -8,18 +8,13 @@
 
 #import "Challenge.h"
 #import "ChallengeTask.h"
-#import "NSManagedObject+JSON.h"
 #import "JSONKit.h"
 
 @implementation Challenge
 
-@dynamic challenge;
-@dynamic date;
-@dynamic imageCredit;
-@dynamic imageUrl;
-@dynamic quote;
-@dynamic quoteCredit;
-@dynamic tasks;
+- (NSURL*) imageUrl {
+    return [NSURL URLWithString:[NSString stringWithFormat:@"http://%@/%@", CHALLENGE_API, self.imagePath]];
+}
 
 - (NSComparisonResult) compare:(Challenge*)challenge {
     return [self.date compare:challenge.date];

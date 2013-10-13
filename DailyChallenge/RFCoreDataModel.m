@@ -11,10 +11,5 @@
 
 @implementation RFCoreDataModel
 
-+ (NSManagedObjectContext*) managedObjectContext {
-    RFAppDelegate* delegate = (RFAppDelegate*)[[UIApplication sharedApplication] delegate];
-    
-    return delegate.managedObjectContext;
-}
 
 @end

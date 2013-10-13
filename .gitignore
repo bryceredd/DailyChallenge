@@ -18,3 +18,5 @@ profile
 .idea
 Pods
 server/public/photos
+server/node_modules
+DerivedData

@@ -10,9 +10,5 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface RFRootViewController : UIViewController <UIScrollViewDelegate>
-
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (nonatomic, strong) NSManagedObjectContext* managedObjectContext;
-
+@interface RFRootViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @end

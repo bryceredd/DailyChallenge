@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021E940D1809F19B005DD2CC /* RFQuoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 021E940C1809F19B005DD2CC /* RFQuoteCell.m */; };
+		021E94101809F1B0005DD2CC /* RFChallengeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 021E940F1809F1B0005DD2CC /* RFChallengeCell.m */; };
+		021E94131809F1BD005DD2CC /* RFChallengeItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 021E94121809F1BD005DD2CC /* RFChallengeItemCell.m */; };
 		022CE5311548AE7D008309C0 /* RFCoreDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 022CE5301548AE7D008309C0 /* RFCoreDataModel.m */; };
+		02640C0917D3A5EC0028BE36 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02640C0817D3A5EC0028BE36 /* Images.xcassets */; };
 		02780F7615437310006332E0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02780F7415437300006332E0 /* QuartzCore.framework */; };
 		02780F7815437318006332E0 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02780F7715437318006332E0 /* CoreText.framework */; };
-		02780F971544671A006332E0 /* RFDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02780F961544671A006332E0 /* RFDayViewController.m */; };
+		02780F971544671A006332E0 /* RFDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02780F961544671A006332E0 /* RFDayCell.m */; };
 		02A05C2C1544F9A200667D32 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02A05C2A1544F9A200667D32 /* Model.xcdatamodeld */; };
 		02A05C2D1544F9A200667D32 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02A05C2A1544F9A200667D32 /* Model.xcdatamodeld */; };
 		02A05C531544FE9F00667D32 /* RFChallengeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A05C521544FE9F00667D32 /* RFChallengeService.m */; };
@@ -47,12 +51,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		021E940B1809F19B005DD2CC /* RFQuoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFQuoteCell.h; sourceTree = "<group>"; };
+		021E940C1809F19B005DD2CC /* RFQuoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFQuoteCell.m; sourceTree = "<group>"; };
+		021E940E1809F1B0005DD2CC /* RFChallengeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFChallengeCell.h; sourceTree = "<group>"; };
+		021E940F1809F1B0005DD2CC /* RFChallengeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFChallengeCell.m; sourceTree = "<group>"; };
+		021E94111809F1BD005DD2CC /* RFChallengeItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFChallengeItemCell.h; sourceTree = "<group>"; };
+		021E94121809F1BD005DD2CC /* RFChallengeItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFChallengeItemCell.m; sourceTree = "<group>"; };
 		022CE52F1548AE7D008309C0 /* RFCoreDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFCoreDataModel.h; sourceTree = "<group>"; };
 		022CE5301548AE7D008309C0 /* RFCoreDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFCoreDataModel.m; sourceTree = "<group>"; };
+		02640C0817D3A5EC0028BE36 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		02780F7415437300006332E0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		02780F7715437318006332E0 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		02780F951544671A006332E0 /* RFDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDayViewController.h; sourceTree = "<group>"; };
-		02780F961544671A006332E0 /* RFDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDayViewController.m; sourceTree = "<group>"; };
+		02780F951544671A006332E0 /* RFDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDayCell.h; sourceTree = "<group>"; };
+		02780F961544671A006332E0 /* RFDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDayCell.m; sourceTree = "<group>"; };
 		02A05C2B1544F9A200667D32 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		02A05C511544FE9F00667D32 /* RFChallengeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFChallengeService.h; sourceTree = "<group>"; };
 		02A05C521544FE9F00667D32 /* RFChallengeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFChallengeService.m; sourceTree = "<group>"; };
@@ -114,6 +125,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		021E940A1809F18B005DD2CC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				021E940B1809F19B005DD2CC /* RFQuoteCell.h */,
+				021E940C1809F19B005DD2CC /* RFQuoteCell.m */,
+				021E940E1809F1B0005DD2CC /* RFChallengeCell.h */,
+				021E940F1809F1B0005DD2CC /* RFChallengeCell.m */,
+				021E94111809F1BD005DD2CC /* RFChallengeItemCell.h */,
+				021E94121809F1BD005DD2CC /* RFChallengeItemCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		021E94141809F4C5005DD2CC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		02780F8915437768006332E0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,12 +162,13 @@
 		02780F8B1543777A006332E0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				021E940A1809F18B005DD2CC /* Cells */,
 				02E070D6154093D700BF4BCE /* MainStoryboard_iPhone.storyboard */,
 				02E070D9154093D800BF4BCE /* MainStoryboard_iPad.storyboard */,
 				02E070CD154093D700BF4BCE /* RFRootViewController.h */,
 				02E070CE154093D700BF4BCE /* RFRootViewController.m */,
-				02780F951544671A006332E0 /* RFDayViewController.h */,
-				02780F961544671A006332E0 /* RFDayViewController.m */,
+				02780F951544671A006332E0 /* RFDayCell.h */,
+				02780F961544671A006332E0 /* RFDayCell.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -199,8 +231,10 @@
 				02780F8915437768006332E0 /* Data */,
 				02780F8C1543777E006332E0 /* Service */,
 				02780F8D154377A3006332E0 /* Connection */,
+				021E94141809F4C5005DD2CC /* Utilities */,
 				02E070CA154093D700BF4BCE /* RFAppDelegate.h */,
 				02E070CB154093D700BF4BCE /* RFAppDelegate.m */,
+				02640C0817D3A5EC0028BE36 /* Images.xcassets */,
 				02E070C2154093D700BF4BCE /* Supporting Files */,
 			);
 			path = DailyChallenge;
@@ -311,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02E070C6154093D700BF4BCE /* InfoPlist.strings in Resources */,
+				02640C0917D3A5EC0028BE36 /* Images.xcassets in Resources */,
 				02E070D8154093D700BF4BCE /* MainStoryboard_iPhone.storyboard in Resources */,
 				02E070DB154093D800BF4BCE /* MainStoryboard_iPad.storyboard in Resources */,
 			);
@@ -363,12 +398,15 @@
 			files = (
 				02E070C8154093D700BF4BCE /* main.m in Sources */,
 				02E070CC154093D700BF4BCE /* RFAppDelegate.m in Sources */,
+				021E94131809F1BD005DD2CC /* RFChallengeItemCell.m in Sources */,
+				021E94101809F1B0005DD2CC /* RFChallengeCell.m in Sources */,
 				02E070CF154093D700BF4BCE /* RFRootViewController.m in Sources */,
-				02780F971544671A006332E0 /* RFDayViewController.m in Sources */,
+				02780F971544671A006332E0 /* RFDayCell.m in Sources */,
 				02A05C2C1544F9A200667D32 /* Model.xcdatamodeld in Sources */,
 				02A05C531544FE9F00667D32 /* RFChallengeService.m in Sources */,
 				022CE5311548AE7D008309C0 /* RFCoreDataModel.m in Sources */,
 				02A2D4B0154DA935000A8BF1 /* ChallengeTask.m in Sources */,
+				021E940D1809F19B005DD2CC /* RFQuoteCell.m in Sources */,
 				02A2D4B4154DA9CD000A8BF1 /* Challenge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,7 +487,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,7 +506,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,6 +518,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B857EFE19BE34977B31640B0 /* Pods.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DailyChallenge/DailyChallenge-Prefix.pch";
@@ -495,6 +535,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B857EFE19BE34977B31640B0 /* Pods.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DailyChallenge/DailyChallenge-Prefix.pch";

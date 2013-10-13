@@ -1,6 +1,5 @@
 DB = process.env.DB || 'mongodb://localhost:27017/challenge'
 PORT = process.env.PORT || 2300
-URL = process.env.URL || 'http://localhost:2300/'
 
 express = require 'express'
 sys = require 'sys'
@@ -24,7 +23,6 @@ createServer = ->
 
   app.post '/challenge', (req, res) ->
     post = req.body
-    post.imageUrl = URL + req.files.file.path.split('/').slice(-2).join('/')
     post.imagePath = req.files.file.path.split("/").slice(-2).join "/"
     post.date = new Date req.date
 
@@ -42,7 +40,7 @@ createServer = ->
       res.send err, 500 if err?
       res.send item
 
-  app.get  '/challenges', (req, res) ->
+  app.get '/challenges', (req, res) ->
     challenge.findAll (err, items) ->
       res.send err, 500 if err?
       res.send items

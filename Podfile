@@ -1,6 +1,7 @@
-platform :ios, :deployment_target => '5.0'
+platform :ios, :deployment_target => '6.0'
 
-dependency 'JSONKit',       '~> 1.4'
-dependency 'AFNetworking', '>= 0.9.0'
-dependency 'Reachability',  '~> 3.0.0'
-dependency 'RFLibrary',     :git => 'git@github.com:bryceredd/RFLibrary.git'
+pod 'JSONKit',       '~> 1.4'
+pod 'AFNetworking', '>= 0.9.0'
+pod 'Reachability',  '~> 3.0.0'
+pod 'JTObjectMapping', '1.0.5'
+pod 'RFLibrary',     :git => 'git@github.com:bryceredd/RFLibrary.git'
